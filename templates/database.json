@@ -1,0 +1,62 @@
+{
+  "products": [
+    {
+      "id": "2f5b7363-17f7-4c0a-8518-3a8128d2b80a",
+      "name": "Quản lý nhóm zalo",
+      "description": "xellox- chuyển bán file bot cung cấp đủ dịch vụ bot zalo, facebook, discord, tool, api,... cam kết chất lượng và hỗ trợ tận tình",
+      "price": 10000,
+      "sale_price": 0,
+      "category": "Bot Zalo",
+      "type": "sell",
+      "image": "https://i.pinimg.com/736x/49/c0/e2/49c0e275c0a3801d98cb3ddc182a4e4f.jpg",
+      "file_url": "https://www.mediafire.com/file/eonljt75sognwew/main.py/file",
+      "views": 1,
+      "created_at": "26/02/2026",
+      "featured": true,
+      "stock": -1
+    }
+  ],
+  "users": [
+    {
+      "id": "344b2b08-88d1-4f3b-bd5a-0d58d34adcfc",
+      "username": "Raichin",
+      "email": "giachuong08@gmail.com",
+      "password": "de16c5a461b055b7bf3ee16cedb012aa562ee6dc79b62ad496e4f07cbbd0e43f",
+      "balance": 0,
+      "created_at": "26/02/2026"
+    },
+    {
+      "id": "4d91c3f6-ade2-4e9f-9cb0-bea00127de52",
+      "username": "rai",
+      "email": "truong77kk@gmail.com",
+      "password": "de16c5a461b055b7bf3ee16cedb012aa562ee6dc79b62ad496e4f07cbbd0e43f",
+      "balance": 0,
+      "created_at": "26/02/2026"
+    }
+  ],
+  "orders": [],
+  "topup_requests": [],
+  "processed_txids": [],
+  "categories": [
+    "Bot Zalo",
+    "Bot Facebook",
+    "Bot Discord",
+    "API",
+    "Source Code",
+    "Tool"
+  ],
+  "admins": [
+    {
+      "username": "admin",
+      "password": "240be518fabd2724ddb6f04eeb1da5967448d7e831c08c8fa822809f74c720a9"
+    }
+  ],
+  "mb_settings": {
+    "username": "0967427517",
+    "account_number": "0967427517",
+    "account_holder": "HO NHAT TRUONG",
+    "bank_name": "MB Bank",
+    "enabled": true,
+    "password": "11009922..ntNT@@"
+  }
+}

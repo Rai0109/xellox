@@ -1,0 +1,92 @@
+{
+  "products": [
+    {
+      "id": "2f5b7363-17f7-4c0a-8518-3a8128d2b80a",
+      "name": "Quản lý nhóm zalo",
+      "description": "Djjjdkd",
+      "price": 10000,
+      "sale_price": 0,
+      "category": "Bot Zalo",
+      "type": "sell",
+      "image": "https://photo-stal-26.zdn.vn/gr/jxl/ca4698e4afa563fb3ab4/283198749228259232.jxl",
+      "file_url": "https://www.mediafire.com/file/eonljt75sognwew/main.py/file",
+      "views": 2,
+      "created_at": "26/02/2026",
+      "featured": true,
+      "stock": -1
+    }
+  ],
+  "users": [
+    {
+      "id": "344b2b08-88d1-4f3b-bd5a-0d58d34adcfc",
+      "username": "Raichin",
+      "email": "giachuong08@gmail.com",
+      "password": "de16c5a461b055b7bf3ee16cedb012aa562ee6dc79b62ad496e4f07cbbd0e43f",
+      "balance": 0,
+      "created_at": "26/02/2026"
+    },
+    {
+      "id": "7813932e-3318-4648-9294-47bc1e522a6a",
+      "username": "xellox",
+      "email": "xellox",
+      "password": "de16c5a461b055b7bf3ee16cedb012aa562ee6dc79b62ad496e4f07cbbd0e43f",
+      "balance": 0,
+      "created_at": "26/02/2026"
+    }
+  ],
+  "orders": [
+    {
+      "id": "99b4df9a-5a27-48b9-a324-4b5743261046",
+      "user": "xellox",
+      "product_id": "2f5b7363-17f7-4c0a-8518-3a8128d2b80a",
+      "product_name": "Quản lý nhóm zalo",
+      "amount": 10000,
+      "coupon": "",
+      "discount": 0,
+      "file_url": "https://www.mediafire.com/file/eonljt75sognwew/main.py/file",
+      "created_at": "26/02/2026 18:06"
+    }
+  ],
+  "categories": [
+    "Bot Zalo",
+    "Bot Facebook",
+    "Bot Discord",
+    "API",
+    "Source Code",
+    "Tool"
+  ],
+  "admins": [
+    {
+      "username": "admin",
+      "password": "240be518fabd2724ddb6f04eeb1da5967448d7e831c08c8fa822809f74c720a9"
+    }
+  ],
+  "mb_settings": {
+    "username": "",
+    "account_number": "",
+    "account_holder": "",
+    "bank_name": "MB Bank",
+    "enabled": false,
+    "password": ""
+  },
+  "processed_txids": [
+    "FT26057281000977",
+    "FT26057256047912",
+    "FT26057032121109"
+  ],
+  "topup_requests": [
+    {
+      "id": "340d93f3-4eb2-4832-b1d4-12f78c1c5a1c",
+      "username": "xellox",
+      "amount": 10000,
+      "code": "NAPXELLOX6F912F",
+      "status": "completed",
+      "created_at": "26/02/2026 18:04:49",
+      "expires_at": "26/02/2026 18:34:49",
+      "amount_received": 10000,
+      "xu_added": 10000,
+      "completed_at": "26/02/2026 18:05:40",
+      "tx_ref": "FT26057256047912"
+    }
+  ]
+}

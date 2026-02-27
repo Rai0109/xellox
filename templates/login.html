@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Đăng nhập - Xelloxx</title>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#080c14;--card:#111827;--border:rgba(255,150,0,0.15);--accent:#ff6a00;--text:#e8eaf0;--muted:#8892a4}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--bg);color:var(--text);font-family:'Syne',sans-serif;min-height:100vh;display:flex;align-items:center;justify-content:center;padding:1rem}
+.bg{position:fixed;inset:0;background:radial-gradient(ellipse 80% 60% at 50% 0%,rgba(255,106,0,0.1),transparent 70%);pointer-events:none}
+.card{background:var(--card);border:1px solid var(--border);border-radius:20px;padding:2.5rem;width:100%;max-width:400px;position:relative;z-index:1}
+.logo{font-size:1.8rem;font-weight:800;text-align:center;margin-bottom:.3rem}
+.logo span{color:var(--accent)}
+.sub{text-align:center;color:var(--muted);font-size:.9rem;margin-bottom:2rem}
+.form-row{margin-bottom:1rem}
+.form-row label{display:block;font-size:.8rem;color:var(--muted);margin-bottom:.4rem;font-family:'Space Mono',monospace}
+.form-row input{width:100%;padding:.8rem 1rem;background:rgba(255,255,255,.04);border:1px solid var(--border);border-radius:8px;color:var(--text);font-family:'Syne',sans-serif;font-size:.9rem;outline:none;transition:.2s}
+.form-row input:focus{border-color:var(--accent)}
+.btn{width:100%;padding:.8rem;border-radius:8px;background:var(--accent);color:#fff;border:none;font-family:'Syne',sans-serif;font-weight:700;font-size:.95rem;cursor:pointer;transition:.2s;margin-top.5rem}
+.btn:hover{background:#ff9500}
+.err{background:rgba(239,68,68,.1);border:1px solid rgba(239,68,68,.3);color:#f87171;padding:.7rem;border-radius:8px;font-size:.85rem;margin-bottom:1rem;display:none}
+.links{text-align:center;margin-top:1.2rem;font-size:.85rem;color:var(--muted)}
+.links a{color:var(--accent);text-decoration:none}
+.divider{text-align:center;color:var(--muted);font-size:.8rem;margin:1rem 0;position:relative}
+.divider::before,.divider::after{content:'';position:absolute;top:50%;width:40%;height:1px;background:var(--border)}
+.divider::before{left:0}.divider::after{right:0}
+</style>
+</head>
+<body>
+<div class="bg"></div>
+<div class="card">
+  <div class="logo">Xell<span>o</span>xx</div>
+  <div class="sub">Đăng nhập vào tài khoản của bạn</div>
+  <div class="err" id="err"></div>
+  <div class="form-row"><label>Tên đăng nhập</label><input type="text" id="user" placeholder="username"></div>
+  <div class="form-row"><label>Mật khẩu</label><input type="password" id="pass" placeholder="••••••••" onkeydown="if(event.key==='Enter')login()"></div>
+  <button class="btn" onclick="login()">Đăng nhập →</button>
+  <div class="links" style="margin-top:1.2rem">Chưa có tài khoản? <a href="/register">Đăng ký ngay</a></div>
+  <div class="divider">hoặc</div>
+  <div class="links"><a href="/">← Về trang chủ</a></div>
+</div>
+<script>
+async function login(){
+  const u=document.getElementById('user').value;
+  const p=document.getElementById('pass').value;
+  const r=await fetch('/api/login',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({username:u,password:p})});
+  const d=await r.json();
+  if(d.ok){window.location.href='/';}
+  else{const e=document.getElementById('err');e.textContent=d.msg;e.style.display='block';}
+}
+</script>
+</body>
+</html>
